@@ -56,7 +56,7 @@ function Login() {
         body: JSON.stringify(authDetail)
       }
 
-      const response = await fetch("http://localhost:8000/api/auth/login", requestOption)
+      const response = await fetch(`${process.env.REACT_APP_HOST}/api/auth/login`, requestOption)
       const json = await response.json()
       console.log(json)
      

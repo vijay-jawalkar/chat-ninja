@@ -43,7 +43,7 @@ export const ChatPage = () => {
                   body: JSON.stringify({ prompt: userInput }) // Assuming userInput is the message to be sent
               };
   
-              const response = await fetch("http://localhost:8000/api/geminiai/chatbot", requestOption);
+              const response = await fetch(`${process.env.REACT_APP_HOST}/api/geminiai/chatbot`, requestOption);
               const json = await response.json();
               console.log(json);
 
