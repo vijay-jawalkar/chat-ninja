@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
 import { HomePage, ChatPage } from '../pages'
-import Login from '../components/Login'
+
 import Signup from '../components/Signup'
 
 function AllRoutes() {

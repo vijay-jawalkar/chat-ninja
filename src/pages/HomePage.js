@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Login from '../components/Login';
-import Signup from '../components/Signup';
+
 
 export function HomePage() {
-    const [chats, setChats] = useState([]);
+ 
 
 
 useEffect( () => {
